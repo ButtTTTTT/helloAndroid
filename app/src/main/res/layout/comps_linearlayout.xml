@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <!--    /**
+        * 线性布局LinearLayout
+        * 线性布局就是从左到右或从上到下按顺序排列的一种布局
+        *
+        *      属性             可选值                                      说明
+        *
+        *  orientation   vertical 垂直排列     也就是这个线性布局到底是水平方向逐个排列还是垂直方向逐个排列
+        *                horizontal 水平排列
+        *  layout_width    match_parent: 填充父           layout_width和layout_height是android重控件的必要属性
+        *   layout_height   容器的剩余控件                  规定了控件的宽度和高度，这个两个属性的值可以是指定的值
+        *                   wrap_content:根据子视图宽高       也可以根据内容自适应，还可以填充整个剩余空间
+        *                   自适应自己的宽高
+        *                   自定义大小50dp
+        *  background       #ff0000 红色                    填充背景色
+        *
+        *  gravity         center：所有子视图相对              决定子控件相对该父容器的位置
+        *                  于父容器居中显示
+        *                  horizontal_center:
+        *                  所有子容器的横向方向上相对
+        *                  父容器居中显示
+        *                  vertical_center:所有子视图的纵向
+        *                  方向上相对父容器居中显示
+        *  layout_gravity   center:该容器相对于它的父容器居中显示            决定该容器相对于它的父容器的位置
+        *                   horizontal_cent:该容器横向向上相对
+        *                   于父容器居中显示
+        *                   vertical_center:该容器纵向方向上相对于它的
+        *                   父容器居中显示
+        **   weight             按比例分配父容器剩余的宽度或高度
+        */-->
+    <!--   线性布局:
+            orientation:
+            0、android:orientation="horizontal"在水平方向上依次排开
+            1、android:orientation="vertical" 在垂直方向上依次排开
+            center:
+            2、android:gravity="center_horizontal" 使得子view在水平方向居中显示
+            3、android:gravity="center_vertical" 使得子view在垂直方向居中显示
+            4、android:gravity="center" 使得子view在水平垂直方向上同时居中显示
+            layout_gravity:
+            5、layout_gravity 是给子view 子视图的css
+            6、android:layout_gravity="center_vertical"如果对齐方式和orientation方向一直，那么就会失效
+            layout_weight:
+            7、android:layout_weight这个属性被赋值之后 layout_width 就失效了
+            8、layout_weight 如果orientation是horizontal水平方向的，那么子空间的layout_width是可以使用weight等比例分配 layout_height就不行
+            9、layout_weight 如果orientation是vertical水平方向的，那么子空间的layout_height是可以使用weight等比例分配 layout_width就不行
+
+    -->
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="2"
+        android:backgroundTint="#ff0000" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:backgroundTint="#00ff00" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:backgroundTint="#0000ff" />
+</LinearLayout>
+
+
+
+

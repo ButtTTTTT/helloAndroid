@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="圆角"
+        android:textColor="#ff0000"
+        android:textSize="18dp"
+        app:cornerRadius="40dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="圆角-描边"
+        android:textColor="#ff0000"
+        android:textSize="18dp"
+        app:cornerRadius="40dp"
+        app:strokeColor="#ff0000"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="圆角-描边"
+        android:textColor="#ff0000"
+        android:textSize="18dp"
+        app:cornerRadius="40dp"
+        app:icon="@android:drawable/star_on"
+        app:iconGravity="textTop"
+        app:iconPadding="3dp"
+        app:iconTint="#ff0000"
+        app:strokeColor="#ff0000"
+        app:strokeWidth="3dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="圆角-描边"
+        android:textColor="#ff0000"
+        android:textSize="18dp"
+        app:cornerRadius="40dp"
+        app:icon="@android:drawable/star_on"
+        app:iconGravity="textEnd"
+        app:iconPadding="3dp"
+        app:iconTint="#ff0000"
+        app:strokeColor="#ff0000"
+        app:strokeWidth="3dp" />
+
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggle_group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:checkedButton="@+id/btn1"
+        app:singleSelection="true"
+        app:selectionRequired="false"
+        android:layout_marginTop="50dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            app:cornerRadius="15dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="tab1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_700"
+            android:text="tab2"
+            android:textColor="#ff0000" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="tab3"
+            android:textColor="#ff0000"
+            app:iconTint="#ff0000" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="tab4"
+            android:textColor="#ff0000"
+            android:backgroundTint="@color/black"
+            app:iconTint="#ff0000"
+            app:cornerRadius="15dp"
+            />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/purple_700"
+        android:clickable="true"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true"
+        android:gravity="center"
+        android:text="11111111111111111111111111111111111111111111111"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        />
+
+</LinearLayout>
